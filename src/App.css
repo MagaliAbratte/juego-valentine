@@ -93,3 +93,54 @@ body{
   animation: moveAndDisable 1.5s forwards;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 480px) {
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .subtitulo{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .boton {
+    font-size: 1.5rem;
+    padding: 15px 25px; 
+    margin-top: 10px;
+  }
+
+  .opcion {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    margin: 5px 5px;
+  }
+
+  .pregunta{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .opcion{
+    font-size: 2rem;
+    padding: 15px 25px; 
+    cursor: pointer; 
+    margin: 20px 10px;
+  }
+
+  .mensaje{
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .titulo-final{
+    margin: 0 auto;
+  }
+
+}

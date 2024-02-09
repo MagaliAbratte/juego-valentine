@@ -64,7 +64,7 @@ function App() {
         <div className='div-preguntas'>
           <h1 className='titulo'>Pregunta {currentQuestion + 1}</h1>
           <h2 className='pregunta'>{questions[currentQuestion].question}</h2>
-          <div className="options">
+          <div className="opciones">
             {questions[currentQuestion].options.map((option, index) => (
               <button
                   key={index}
@@ -81,7 +81,7 @@ function App() {
         <div className='div-titulo'>
           <h1 className='titulo'>¡Juego terminado!</h1>
           <p className='subtitulo'>Puntaje final: {score}/{questions.length}😄</p>
-          <p>Feliz San Valentin :) Te quiero mucho! 💘</p>
+          <p className='mensaje'>Feliz San Valentin :) Te quiero mucho! 💘</p>
         </div>
       )}
     </div>
