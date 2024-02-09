@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body{
+  background-color: #B5D99C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-titulo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh; 
 }
 
-.App-link {
-  color: #61dafb;
+.titulo{
+  font-family: "Honk", system-ui;
+  font-size: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.subtitulo{
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+}
+
+.boton {
+  background-color: #FFF035;
+  color: black; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 18px;
+  padding: 15px 25px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.boton:hover {
+  background-color: #DB5CEF;
+}
+
+.div-preguntas{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content:flex-start;
+  height: 100vh; 
+}
+
+.pregunta{
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+}
+
+.opcion{
+  background-color: white;
+  color: black; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px; 
+  cursor: pointer; 
+  margin: 0 10px;
+}
+
+.selected{
+  background-color: #DB5CEF;
+}
+
+.opcion:hover{
+  background-color: #E5E5E5;
+}
+
+.opcion-magui{
+  background-color: white;
+  color: black; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px; 
+  cursor: pointer; 
+  margin: 0 10px;
+}
+
+@keyframes moveAndDisable {
+  0%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(80px); 
+    pointer-events: none;
   }
+}
+
+.opcion-magui:hover {
+  animation: moveAndDisable 1.5s forwards;
+  animation-fill-mode: forwards;
 }
