@@ -7,17 +7,26 @@ body{
   flex-direction: column;
   align-items: center; 
   justify-content: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .titulo{
   font-family: "Honk", system-ui;
-  font-size: 5rem;
+  font-size: 4rem;
+  width: 60%;
+  text-align: center;
 }
 
 .subtitulo{
   font-family: "Jost", sans-serif;
   font-size: 1.8rem;
+  text-align: center;
+}
+
+.reglas{
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .boton {
@@ -28,13 +37,17 @@ body{
   border-radius: 18px;
   padding: 15px 25px; 
   cursor: pointer; 
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .boton:hover {
-  background-color: #DB5CEF;
+  background-color: #FFD700;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .div-preguntas{
   display: flex;
@@ -58,6 +71,7 @@ body{
   padding: 15px 25px; 
   cursor: pointer; 
   margin: 0 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .selected{
@@ -77,6 +91,7 @@ body{
   padding: 15px 25px; 
   cursor: pointer; 
   margin: 0 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes moveAndDisable {
@@ -94,13 +109,23 @@ body{
   animation-fill-mode: forwards;
 }
 
+.mensaje{
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 480px) {
+
+  .div-titulo {
+    margin: 0 auto;
+  }
+
   .titulo {
     font-size: 3rem;
   }
 
   .subtitulo{
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 

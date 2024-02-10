@@ -8,7 +8,7 @@ const questions = [
     answer: 'Menta Granizada',
   },
   {
-    question: '¿Cual es el mejor capitulo de The Office?📺',
+    question: '¿Cuál es el mejor capitulo de The Office?📺',
     options: ['Dinner Party', 'Estress Relief', 'The Dundies'],
     answer: 'Estress Relief',
   },
@@ -18,14 +18,14 @@ const questions = [
     answer: 'Sushi',
   },
   {
-    question: '¿La pizza se come con cubiertos?🍕',
-    options: ['Claro que no', 'Claro que si'],
+    question: 'La pizza, ¿Se come con cubiertos?🍕',
+    options: ['Claro que si', 'Claro que no'],
     answer: 'Claro que no',
   },
   {
-    question: 'Finalmente, ¿Quien fue el ultimo que perdio en el saludo personal?👐',
+    question: 'Finalmente, ¿Quién fue el último que perdio en nuestro saludo?👐',
     options: ['Bruno', 'Bruno otra vez', 'Brunito' ,'Magui'],
-    answer: 'Bruno',
+    answer: 'Bruno otra vez',
   },
 ];
 
@@ -56,8 +56,10 @@ function App() {
     <div className="App">
       {currentQuestion === null ? (
         <div className='div-titulo'>
-          <h1 className='titulo'>Un Jueguito</h1>
-          <p className='subtitulo'>(Si sacas menos de 5 puntos me debes un Kinder👀)</p>
+          <h1 className='titulo'>Un jueguito para mi gamer favorito</h1>
+          <p className='subtitulo'>5 preguntas, 1 punto cada una.</p>
+          <p className='reglas'>Si sacas 5 puntos te regalo un Cadbury de frutilla🍫🍓
+          <br />Si sacas menos de 5 puntos me debes un Kinder Bueno👀</p>
           <button onClick={startGame} className='boton'>¡Jugar!❤️</button>
         </div>
       ) : currentQuestion < questions.length ? (
@@ -81,7 +83,7 @@ function App() {
         <div className='div-titulo'>
           <h1 className='titulo'>¡Juego terminado!</h1>
           <p className='subtitulo'>Puntaje final: {score}/{questions.length}😄</p>
-          <p className='mensaje'>Feliz San Valentin :) Te quiero mucho! 💘</p>
+          <p className='mensaje'>Feliz San Valentin🥺 Te quiero mucho!💘</p>
         </div>
       )}
     </div>
